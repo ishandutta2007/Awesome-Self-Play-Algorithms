@@ -90,6 +90,19 @@ While sliding window attention provides a clear mathematical optimization path, 
 
 ---
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Self-Play-Algorithms&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Self-Play-Algorithms&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Self-Play-Algorithms&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Self-Play-Algorithms&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+---
+
 To advance your documentation repository, structural setup, or deployment architecture, consider exploring these adjacent development pathways:
 * Build a **Python code snippet using PyTorch** illustrating how to generate a causal rolling sliding-window mask matrix template from scratch.
 * Generate a **comprehensive Markdown table** explicitly analyzing Standard Sliding Window, Dilated Window, Full Attention, and Attention Sink architectures across cache size limits, computational time complexity, and long-range retrieval fidelity.
