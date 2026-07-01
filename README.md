@@ -1,11 +1,13 @@
 # Awesome-Self-Play-Algorithms
-## Sliding Window Attention: Evolution, Variants, Types, & Applications
+![Banner](assets/banner.svg)
+
+## 🚀 Sliding Window Attention: Evolution, Variants, Types, & Applications
 
 Sliding Window Attention—also known as Local Attention or Bounded Attention—is a structural sparsification framework designed to mitigate the quadratic computational complexity ($O(N^2)$) and VRAM bottlenecks of standard Full Self-Attention in Transformer architectures. In full attention, every token must compute an attention score with every other token in a sequence, making long-context processing (e.g., full books, high-resolution video clips, or massive source code repositories) highly inefficient. Sliding Window Attention restricts each token's attention field to a fixed, localized neighborhood (a "window") of adjacent tokens, dropping the computational and memory footprint down to true linear scaling ($O(N \times W)$), where $W$ is the window width.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The implementation of sliding window mechanisms has evolved from rigid, localized text boundaries to multi-scale hybrid configurations and hardware-fused rolling buffers capable of maintaining long-range context without quadratic overhead.
 
@@ -24,7 +26,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Structural Variants
+## 🧩 2. Core Functional & Structural Variants
 
 Sliding window attention is deployed using distinct layout configurations that alter how information travels across the deep layers of a Transformer.
 
@@ -36,7 +38,7 @@ Sliding window attention is deployed using distinct layout configurations that a
 
 ---
 
-## 3. High-Yield Cache Management Types
+## 💾 3. High-Yield Cache Management Types
 
 Managing the Key-Value (KV) cache during continuous sliding window inference dictates the latency profile and memory consumption of production systems.
 
@@ -47,7 +49,7 @@ Managing the Key-Value (KV) cache during continuous sliding window inference dic
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Trade-Offs
+## ⚙️ 4. Production Engineering Challenges & Hardware Trade-Offs
 
 While sliding window attention provides a clear mathematical optimization path, hardware integration presents distinct engineering constraints.
 
@@ -58,7 +60,7 @@ While sliding window attention provides a clear mathematical optimization path, 
 
 ---
 
-## 5. Frontier Real-World Applications
+## 🌟 5. Frontier Real-World Applications
 
 | Application | Description / Context | Year First Used | Paper Link |
 | :--- | :--- | :--- | :--- |
@@ -68,7 +70,7 @@ While sliding window attention provides a clear mathematical optimization path, 
 
 ---
 
-## References
+## 📚 References
 1. Child, R., Gray, S., Radford, A., & Sutskever, I. (2019). Generating long sequences with sparse transformers. *arXiv preprint arXiv:1904.10509*.
 2. Beltagy, I., Peters, M. E., & Cohan, A. (2020). Longformer: The long-document transformer. *arXiv preprint arXiv:2004.05150*.
 3. Zaheer, M., et al. (2020). Big bird: Transformers for longer sequences. *Advances in Neural Information Processing Systems (NeurIPS)*, 33, 17271-17239.
