@@ -10,7 +10,10 @@ Sliding Window Attention—also known as Local Attention or Bounded Attention—
 The implementation of sliding window mechanisms has evolved from rigid, localized text boundaries to multi-scale hybrid configurations and hardware-fused rolling buffers capable of maintaining long-range context without quadratic overhead.
 
 ```mermaid
-[Rigid Local Windows (2019/2020)] ----> [Dilated & Global Hybrids (Longformer)] ----> [Modern Rolling Cache & Sinks (Mistral)](Strict Nearby Token Scopes)             (Asymmetric Strided Distance Steps)          (Hardware-Fused Constant VRAM Buffers)
+flowchart LR
+    A["Rigid Local Windows (2019/2020)<br/>(Strict Nearby Token Scopes)"]
+    --> B["Dilated & Global Hybrids (Longformer)<br/>(Asymmetric Strided Distance Steps)"]
+    --> C["Modern Rolling Cache & Sinks (Mistral)<br/>(Hardware-Fused Constant VRAM Buffers)"]
 ```
 
 *   **The Flat Heuristic Era (Early Local Attention, ~2019–2020)**
